@@ -1,0 +1,58 @@
+/* 定义最外层的宽度 */
+.allWidth {
+    width: 1920px;
+    margin: 0 auto;
+}
+.contentWidth {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+/* 顶部导航样式 */
+.TopNavigation {
+    height: 41px;
+    background-color: rgb(51, 51, 51);
+}
+/* 顶部导航内容 */
+.TopNavigationContent {
+    color: rgb(176, 176, 176);
+    height: 41px;
+}
+/* 顶部导航内容左侧ul 和span */
+.TopNavigationContentLeftUl li ,  .TopNavigationContentLeftUl span{
+    float: left;
+    line-height: 41px;
+    padding-right: 6px;
+}
+.TopNavigationContentLeftUl li a{
+    display: block;
+    color: rgb(176, 176, 176);
+}
+.TopNavigationContentLeftUl li a:hover {
+    color: rgb(255, 255, 255);
+}
+.TopNavigationContentLeftUl span {
+    color: rgb(66, 66, 66);
+    vertical-align: top;
+    margin-top: -1px;
+}
+
+/* 右侧购物车 */
+.TopNavigationContentShoppingCart {
+    line-height: 40px;
+    float: right;
+    color: rosybrown;
+    width: 121px;
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+}
+.TopNavigationContentShoppingCart i {
+    width: 10px;
+    height: 10px;
+}
+.TopNavigationContentShoppingCart a {
+    color: rgb(176, 176, 176);
+}
+.TopNavigationContentShoppingCart a:hover {
+    color: orange;
+}
