@@ -1,12 +1,15 @@
+
+
 /* 定义最外层的宽度 */
 .allWidth {
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
 }
 .contentWidth {
     width: 1226px;
     margin: 0 auto;
 }
+
 
 /* 顶部导航样式 */
 .TopNavigation {
@@ -45,6 +48,7 @@
     width: 121px;
     background-color: rgb(66, 66, 66);
     text-align: center;
+    position: relative;
 }
 .TopNavigationContentShoppingCart i {
     width: 10px;
@@ -52,7 +56,53 @@
 }
 .TopNavigationContentShoppingCart a {
     color: rgb(176, 176, 176);
+    display: block;
 }
 .TopNavigationContentShoppingCart a:hover {
     color: orange;
+    background-color: white;
+}
+/* 右侧登录信息 */
+.TopNavigationContentRightUl {
+    float: right;
+    
+}
+.TopNavigationContentRightUl {
+    margin-right: 15px;
+}
+.TopNavigationContentRightUl li, .TopNavigationContentRightUl span{
+    line-height: 41px;
+    float: left;
+    display: block;
+    padding-right: 5px;
+    color: rgb(176, 176, 176);
+}
+
+.TopNavigationContentRightUl li a {
+    color: rgb(176, 176, 176);
+}
+.TopNavigationContentRightUl li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* 购物车详情 */
+.TopNavigationContentShoppingCartDetail {
+    width: 320px;
+    height: 0px;
+    color: black;
+    position: absolute;
+    left: -199px;
+    transition: height 0.5s;
+    line-height: 100px;
+    /* 解决内容在隐藏情况下显示的问题 */
+    overflow: hidden;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+.TopNavigationContentShoppingCart:hover .TopNavigationContentShoppingCartDetail{
+    height: 100px;
+}
+.TopNavigationContentShoppingCart:hover a {
+    color: orange;
+    background-color: azure;
 }
